@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Dorks</title>
+    <link rel="stylesheet" href="app/css/all.css">
+</head>
+<body onload="cargarGerDorks()">
+    <div class="dobleBody">
+        <div class="generators">
+            <div class="center">
+                <h1>Generador de Dorks free</h1>
+            </div>
+            <h2>Cantidad de dorks a generar</h2>
+            <input type="text" value="100" id="cantidad">
+            <h2>Configuraciones de la busqueda (Ejemplo: inurl:):</h2>
+            <textarea id="configuraciones"></textarea>
+            <h2>Extensiones de los archivos a buscar (Ejemplo .php):</h2>
+            <textarea id="extensiones"></textarea>
+            <h2>Atributos de los valores a enviar (Ejemplo id):</h2>
+            <textarea id="atributos"></textarea>
+            <div class="center">
+                <button onclick="genDorks()">Generar</button>
+            </div>
+            <br><hr>
+            <h2>Resultado:</h2>
+            <textarea id="resultado"></textarea>
+        </div>
+    </div>
+    <script src="app/js/all.js"></script>
+</body>
+</html>
